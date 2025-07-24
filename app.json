@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/houseinfo/houseinfo",
+        "pages/degree2build/degree2build",
+        "pages/exchange/exchange",
+        "pages/webview/webview",
+        "pages/degree2build/bindinfo/bindinfo"
+    ],
+    "permissions": {
+      "scope.subscribeMessage": {
+        "desc": "订阅消息用于发送提醒"
+      }
+    },
+    "requiredPrivateInfos": [
+      "chooseLocation"
+    ],
+    "lazyCodeLoading": "requiredComponents",
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2d8cf0",
+        "navigationBarTitleText": "小李广工具助手",
+        "navigationBarTextStyle": "white"
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "tabBar": {
+        "list": [ 
+            {
+                "pagePath": "pages/degree2build/degree2build",
+                "text": "长沙市学区查询",
+                "iconPath": "images/school.jpg",
+                "selectedIconPath": "images/school.jpg"
+            },  
+            {
+                "pagePath": "pages/index/index",
+                "text": "长沙地铁周边楼盘",
+                "iconPath": "images/metro.jpg",
+                "selectedIconPath": "images/metro.jpg"
+            },            
+            {
+                "pagePath": "pages/houseinfo/houseinfo",
+                "text": "二手房源查询",
+                "iconPath": "images/house.jpg",
+                "selectedIconPath": "images/house.jpg"
+            }, 
+            {
+                "pagePath": "pages/exchange/exchange",
+                "text": "外汇汇率查询",
+                "iconPath": "images/waihui.jpeg",
+                "selectedIconPath": "images/waihui.jpeg"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}
